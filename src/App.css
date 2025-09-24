@@ -27,6 +27,8 @@
 .RandomTask {
   border: 1px solid black;
   height: 50px;
+  overflow: auto;
+  display: block;
 }
 
 .QueueList, .Duration {
@@ -37,4 +39,9 @@
 p {
   margin: 0;
   font-size: small;
+}
+
+li {
+  border: 1px solid black;
+  width: 100px;
 }
