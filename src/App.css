@@ -15,7 +15,7 @@
   color: white;
 }
 
-.AddTask:hover {
+.AddTask:hover, .AdmitTask:hover {
   background-color: #66f;
   cursor: pointer;
 }
@@ -25,15 +25,28 @@
 }
 
 .RandomTask {
-  border: 1px solid black;
   height: 50px;
   overflow: auto;
-  display: block;
+  display: flex;
+  gap: 2px;
+}
+
+.RandomTask li {
+  list-style-type: none;
+  width: fit-content;
+  height: fit-content;
 }
 
 .QueueList, .Duration {
   height: 40px;
-  border: 1px solid whitesmoke;
+  border: 1px solid red;
+  display: flex;
+  gap: 2px;
+}
+
+.QueueList li {
+  list-style-type: none;
+  width: fit-content;
 }
 
 p {
