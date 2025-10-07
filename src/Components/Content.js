@@ -8,7 +8,8 @@ export function QueueContent1(props) {
             <h2 className="TaskQueue">Task Queue</h2>
             <div className="RandomTask">
                 {props.tasks.map((task, i) => (
-                    <li>{task}</li>
+                    task.value != null ?
+                        <li style={{ border: (task.key === 1) ? "1px solid red" : "1px solid black" }}>{task.value}</li> : console.log()
                 ))}
             </div>
             <button onClick={props.handleOnclickAdmit} className="AdmitTask">Admit Task</button>
